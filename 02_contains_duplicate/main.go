@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func containsDuplicate(nums []int) bool {
 	seen := make(map[int]int)
 
@@ -10,4 +12,8 @@ func containsDuplicate(nums []int) bool {
 		seen[num] = i
 	}
 	return false
+}
+
+func main() {
+	fmt.Println(containsDuplicate([]int{2, 7, 2, 11}))
 }
